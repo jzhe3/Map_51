@@ -1,0 +1,33 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Map_51</Name>
+  <AddInID>{f56fe7ac-5944-4aa5-a513-14fb1da37865}</AddInID>
+  <Description>Type in a description for this Add-in.</Description>
+  <Version>1.0</Version>
+  <Image>Images\Map_51.png</Image>
+  <Author>hj</Author>
+  <Company></Company>
+  <Date>2018/4/11</Date>
+  <Targets>
+    <Target name="Desktop" version="10.3" />
+  </Targets>
+  <AddIn language="CLR4.5" library="Map_51.dll" namespace="Map_51">
+    <ArcMap>
+      <Commands>
+        <Button id="Map_51_Zoom2SelectedLayer" class="Zoom2SelectedLayer" message="Zoom2SelectedLayer" caption="Zoom2SelectedLayer" tip="Zoom2SelectedLayer" category="Add-In Controls" image="Images\Zoom2SelectedLayer.png" />
+        <Tool id="Map_51_RotatoMap" class="RotatoMap" message="RotatoMap" caption="RotatoMap" tip="RotatoMap" category="Add-In Controls" image="Images\RotatoMap.png" />
+        <Tool id="Map_51_SelectByPolygon" class="SelectByPolygon" message="SelectByPolygon" caption="SelectByPolygon" tip="SelectByPolygon" category="Add-In Controls" image="Images\SelectByPolygon.png" />
+      </Commands>
+    
+        <Toolbars>
+        <Toolbar id="hubuU-hj-GIS-Sample-5" caption="GIS Sample Toolbar-5" showInitially="true">
+          <Items>
+            <Item refID="Map_51_Zoom2SelectedLayer" />
+            <Item refID="Map_51_RotatoMap" />
+            <Item refID="Map_51_SelectByPolygon" />
+          </Items>
+        </Toolbar>
+      </Toolbars>
+
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
